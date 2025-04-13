@@ -602,35 +602,6 @@
             });
         }
         
-        // Menu mobile
-        const mobileMenuButton = document.getElementById('mobileMenuButton');
-        const closeMenuButton = document.getElementById('closeMenuButton');
-        const mobileMenu = document.getElementById('mobileMenu');
-        
-        if (mobileMenuButton && mobileMenu) {
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            });
-        }
-        
-        if (closeMenuButton && mobileMenu) {
-            closeMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-                document.body.style.overflow = '';
-            });
-        }
-        
-        // Fermer le menu en cliquant à l'extérieur
-        document.addEventListener('click', (e) => {
-            if (mobileMenu && mobileMenu.classList.contains('active') && 
-                !mobileMenu.contains(e.target) && 
-                e.target !== mobileMenuButton) {
-                mobileMenu.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        });
-        
         // Envoi du formulaire par email
         const devisForm = document.getElementById('devisForm');
         
