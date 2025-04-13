@@ -3,30 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Congo Building Services - Entreprise de construction en RDC spécialisée dans les bâtiments, travaux publics et services techniques à Kinshasa et Goma">
-    <meta name="keywords" content="construction RDC, bâtiment Kinshasa, travaux publics Goma, entreprise construction Congo, rénovation bâtiment, CBS Congo">
+    <meta name="description" content="Congo Building Services - Entreprise de construction et rénovation en RDC. Expertise en bâtiment, travaux publics et commerce de matériaux à Kinshasa et Goma.">
+    <meta name="keywords" content="construction RDC, bâtiment Kinshasa, travaux publics Goma, rénovation Congo, matériaux construction, entreprise bâtiment Congo">
     <meta name="author" content="Congo Building Services">
     <meta property="og:title" content="Congo Building Services - Construction en RDC">
     <meta property="og:description" content="Expertise en construction à Kinshasa et Goma depuis 2020">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.congobuildingservices.cd">
+    <meta property="og:url" content="https://www.congobuildingservices.com">
     <meta name="robots" content="index, follow">
-    
-    <title>Congo Building Services - Construction BTP en République Démocratique du Congo</title>
-    
-    <!-- Preload des ressources critiques -->
-    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
-    <link rel="preload" href="logof-removebg-preview.png" as="image">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    
-    <!-- Chargement des CSS -->
+    <link rel="canonical" href="https://www.congobuildingservices.com">
+    <title>Congo Building Services - Entreprise de Construction en RDC | Kinshasa & Goma</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         .gradient-bg {
             background: linear-gradient(135deg, #1e3a8a 0%, #f97316 100%);
@@ -40,7 +29,6 @@
         .team-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .project-card {
             transition: all 0.3s ease;
@@ -48,127 +36,108 @@
         .project-card:hover {
             transform: scale(1.03);
         }
-        /* Améliorations pour mobile */
+        .mobile-menu {
+            display: none;
+        }
+        .mobile-menu.active {
+            display: block;
+        }
+        .logo-container {
+            max-width: 200px;
+        }
+        .hero-image {
+            transition: background-image 1s ease-in-out;
+        }
+        
+        /* Animation pour le bouton */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
         @media (max-width: 768px) {
             .hero-image {
-                min-height: 50vh;
+                min-height: 60vh;
             }
             .hero-content h2 {
                 font-size: 2.5rem;
             }
             .hero-content p {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
+            }
+            .logo-container {
+                max-width: 150px;
             }
         }
-        /* Accessibilité */
-        :focus {
-            outline: 3px solid #f97316;
-            outline-offset: 2px;
-        }
-        /* Optimisation des images */
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        /* Menu mobile */
-        .mobile-menu {
-            transform: translateX(100%);
-            transition: transform 0.3s ease;
-        }
-        .mobile-menu.active {
-            transform: translateX(0);
+        @media (max-width: 640px) {
+            .hero-image {
+                min-height: 50vh;
+            }
+            .hero-content h2 {
+                font-size: 2rem;
+            }
+            .hero-content p {
+                font-size: 1rem;
+            }
+            .registration-info {
+                font-size: 0.8rem;
+            }
         }
     </style>
-    
-    <!-- Schema.org markup for Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ConstructionBusiness",
-      "name": "Congo Building Services",
-      "image": "https://www.congobuildingservices.cd/logof-removebg-preview.png",
-      "@id": "https://www.congobuildingservices.cd",
-      "url": "https://www.congobuildingservices.cd",
-      "telephone": "+243977739825",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "N°1, av/ Abedi, c/ Ngaliema, Q/Kinsuka pécheur",
-        "addressLocality": "Kinshasa",
-        "addressCountry": "CD"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -4.4419311,
-        "longitude": 15.2662931
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "08:00",
-        "closes": "17:00"
-      },
-      "sameAs": [
-        "https://www.facebook.com/congobuildingservices",
-        "https://www.linkedin.com/company/congobuildingservices"
-      ]
-    }
-    </script>
 </head>
-<body class="font-sans antialiased text-gray-800">
+<body class="font-sans">
     <!-- Header avec logo -->
     <header class="gradient-bg text-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-2">
-                    <a href="#accueil" class="flex items-center focus:outline-none">
-                        <div class="w-16 h-16 md:w-20 md:h-20 bg-white p-1 rounded-lg">
-                            <img src="logof-removebg-preview.png" alt="Logo Congo Building Services" class="w-full h-full object-contain" width="80" height="80" loading="eager">
+                <!-- Logo et nom de l'entreprise -->
+                <div class="flex items-center space-x-2 md:space-x-4">
+                    <div class="logo-container">
+                        <img src="logof-removebg-preview.png" alt="Logo Congo Building Services" class="w-full h-auto object-contain">
+                    </div>
+                    <div class="hidden md:block">
+                        <h1 class="text-xl md:text-2xl font-bold">Congo Building Services</h1>
+                        <div class="registration-info text-xs opacity-80">
+                            <p>RCCM: CD/KNG/RCCM/23-B-00662</p>
+                            <p>IdNat: 01-F4200-N28812F</p>
+                            <p>N° Impôt: A2308594S</p>
                         </div>
-                        <div class="ml-2 md:ml-4">
-                            <h1 class="text-xl md:text-2xl font-bold">Congo Building Services</h1>
-                            <div class="text-xs md:text-sm opacity-80">
-                                <p>RCCM : CD/KNG/RCCM/23-B-00662</p>
-                                <p>IdNat : 01-F4200-N28812F</p>
-                                <p>N° d'Impot: A2308594S</p>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
                 </div>
-                
-                <nav class="hidden md:flex space-x-6 lg:space-x-8">
-                    <a href="#accueil" class="hover:text-orange-200 transition py-2 px-1 focus:outline-none focus:ring-2 focus:ring-orange-300 rounded">Accueil</a>
-                    <a href="#services" class="hover:text-orange-200 transition py-2 px-1 focus:outline-none focus:ring-2 focus:ring-orange-300 rounded">Services</a>
-                    <a href="#realisations" class="hover:text-orange-200 transition py-2 px-1 focus:outline-none focus:ring-2 focus:ring-orange-300 rounded">Réalisations</a>
-                    <a href="#equipe" class="hover:text-orange-200 transition py-2 px-1 focus:outline-none focus:ring-2 focus:ring-orange-300 rounded">Équipe</a>
-                    <a href="#contact" class="hover:text-orange-200 transition py-2 px-1 focus:outline-none focus:ring-2 focus:ring-orange-300 rounded">Contact</a>
+
+                <!-- Navigation desktop -->
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#accueil" class="hover:text-orange-200 transition py-2 px-3 rounded">Accueil</a>
+                    <a href="#services" class="hover:text-orange-200 transition py-2 px-3 rounded">Services</a>
+                    <a href="#realisations" class="hover:text-orange-200 transition py-2 px-3 rounded">Réalisations</a>
+                    <a href="#equipe" class="hover:text-orange-200 transition py-2 px-3 rounded">Équipe</a>
+                    <a href="#contact" class="hover:text-orange-200 transition py-2 px-3 rounded">Contact</a>
                 </nav>
-                
-                <button id="mobileMenuButton" class="md:hidden text-2xl p-2 focus:outline-none focus:ring-2 focus:ring-orange-300 rounded">
+
+                <!-- Bouton menu mobile -->
+                <button id="mobileMenuBtn" class="md:hidden text-2xl focus:outline-none">
                     <i class="fas fa-bars"></i>
-                    <span class="sr-only">Ouvrir le menu</span>
                 </button>
             </div>
-        </div>
-        
-        <!-- Menu mobile -->
-        <div id="mobileMenu" class="mobile-menu fixed inset-y-0 right-0 w-64 bg-blue-900 text-white shadow-lg p-6 transform transition-transform duration-300 ease-in-out z-50">
-            <button id="closeMenuButton" class="absolute top-4 right-4 text-2xl focus:outline-none">
-                <i class="fas fa-times"></i>
-                <span class="sr-only">Fermer le menu</span>
-            </button>
-            <nav class="mt-12 space-y-6">
-                <a href="#accueil" class="block py-2 hover:text-orange-200 transition focus:outline-none focus:ring-2 focus:ring-orange-300 rounded">Accueil</a>
-                <a href="#services" class="block py-2 hover:text-orange-200 transition focus:outline-none focus:ring-2 focus:ring-orange-300 rounded">Services</a>
-                <a href="#realisations" class="block py-2 hover:text-orange-200 transition focus:outline-none focus:ring-2 focus:ring-orange-300 rounded">Réalisations</a>
-                <a href="#equipe" class="block py-2 hover:text-orange-200 transition focus:outline-none focus:ring-2 focus:ring-orange-300 rounded">Équipe</a>
-                <a href="#contact" class="block py-2 hover:text-orange-200 transition focus:outline-none focus:ring-2 focus:ring-orange-300 rounded">Contact</a>
-            </nav>
+
+            <!-- Menu mobile -->
+            <div id="mobileMenu" class="mobile-menu md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="#accueil" class="block py-2 px-4 hover:bg-white hover:bg-opacity-20 rounded transition">Accueil</a>
+                    <a href="#services" class="block py-2 px-4 hover:bg-white hover:bg-opacity-20 rounded transition">Services</a>
+                    <a href="#realisations" class="block py-2 px-4 hover:bg-white hover:bg-opacity-20 rounded transition">Réalisations</a>
+                    <a href="#equipe" class="block py-2 px-4 hover:bg-white hover:bg-opacity-20 rounded transition">Équipe</a>
+                    <a href="#contact" class="block py-2 px-4 hover:bg-white hover:bg-opacity-20 rounded transition">Contact</a>
+                </div>
+                <div class="mt-4 pt-4 border-t border-white border-opacity-20 text-sm">
+                    <p>RCCM: CD/KNG/RCCM/23-B-00662</p>
+                    <p>IdNat: 01-F4200-N28812F</p>
+                    <p>N° Impôt: A2308594S</p>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -176,23 +145,23 @@
     <section id="accueil" class="hero-image relative" aria-label="Présentation de Congo Building Services">
         <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
             <div class="container mx-auto px-4 text-white hero-content">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">Construisons l'avenir ensemble</h1>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Construisons l'avenir ensemble</h1>
                 <p class="text-xl md:text-2xl mb-8 max-w-2xl">Expertise en construction à Kinshasa et Goma depuis 2020</p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block text-center focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-900">
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">
                         Demander un devis
                     </a>
-                    <a href="#services" class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block text-center focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-900">
+                    <a href="#services" class="bg-white hover:bg-gray-100 text-blue-900 font-bold py-3 px-8 rounded-full transition duration-300 inline-block">
                         Nos services
                     </a>
                 </div>
             </div>
         </div>
-        
+
         <!-- Bouton pour changer l'image d'accueil -->
         <div class="absolute bottom-4 right-4">
-            <button id="changeHeroBtn" class="bg-white bg-opacity-80 hover:bg-opacity-100 text-blue-900 font-bold py-2 px-4 rounded-full transition duration-300 flex items-center focus:outline-none focus:ring-2 focus:ring-blue-900">
-                <i class="fas fa-image mr-2" aria-hidden="true"></i> Changer l'image
+            <button id="changeHeroBtn" class="bg-white bg-opacity-80 hover:bg-opacity-100 text-blue-900 font-bold py-2 px-4 rounded-full transition duration-300 flex items-center">
+                <i class="fas fa-image mr-2"></i> Changer l'image
             </button>
         </div>
     </section>
@@ -200,152 +169,110 @@
     <!-- Section Services -->
     <section id="services" class="py-16 bg-gray-50" aria-label="Nos services">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <span class="text-orange-500 font-semibold">Nos domaines d'expertise</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mt-2">Services Professionnels</h2>
-                <div class="w-20 h-1 bg-orange-500 mx-auto mt-4"></div>
-            </div>
-            
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Nos Services</h2>
+
             <div class="grid md:grid-cols-3 gap-8">
-                <article class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition h-full">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition" itemscope itemtype="https://schema.org/Service">
                     <div class="text-blue-900 text-4xl mb-4">
                         <i class="fas fa-building" aria-hidden="true"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Département de Bâtiment et Travaux Publics</h3>
-                    <ul class="text-gray-600 space-y-2">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-orange-500 mt-1 mr-2" aria-hidden="true"></i>
-                            <span>Travaux de construction (Électricité, Plomberie, Menuiserie, Vitrerie, Carrelage)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-orange-500 mt-1 mr-2" aria-hidden="true"></i>
-                            <span>Rénovation, entretien et démolition</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-orange-500 mt-1 mr-2" aria-hidden="true"></i>
-                            <span>Élaboration de plan d'Architecture</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-orange-500 mt-1 mr-2" aria-hidden="true"></i>
-                            <span>Construction des infrastructures routières</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-orange-500 mt-1 mr-2" aria-hidden="true"></i>
-                            <span>Alimentation d'eau potable</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-orange-500 mt-1 mr-2" aria-hidden="true"></i>
-                            <span>Rénovation de piscine</span>
-                        </li>
-                    </ul>
-                </article>
-                
-                <article class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition h-full">
+                    <h3 class="text-xl font-bold mb-3" itemprop="name">Département de bâtiment et travaux Publics</h3>
+                    <div class="text-gray-600 space-y-2" itemprop="description">
+                        <p class="font-semibold">Travaux de construction:</p>
+                        <ul class="list-disc list-inside pl-2">
+                            <li>Électricité</li>
+                            <li>Plomberie</li>
+                            <li>Menuiserie</li>
+                            <li>Vitrerie</li>
+                            <li>Carrelage</li>
+                        </ul>
+                        <p class="font-semibold mt-2">Rénovation, entretien et démolition</p>
+                        <p class="font-semibold">Élaboration de plan d'Architecture</p>
+                        <p class="font-semibold">Construction des infrastructures routières</p>
+                        <p class="font-semibold">Alimentation d'eau potable</p>
+                        <p class="font-semibold">Rénovation de piscine</p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition" itemscope itemtype="https://schema.org/Service">
                     <div class="text-blue-900 text-4xl mb-4">
                         <i class="fas fa-tools" aria-hidden="true"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Département de Commerce</h3>
-                    <ul class="text-gray-600 space-y-2">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-orange-500 mt-1 mr-2" aria-hidden="true"></i>
-                            <span>Vente des matériaux de construction</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-orange-500 mt-1 mr-2" aria-hidden="true"></i>
-                            <span>Vente des matériels de construction</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-orange-500 mt-1 mr-2" aria-hidden="true"></i>
-                            <span>Vente des services techniques</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-orange-500 mt-1 mr-2" aria-hidden="true"></i>
-                            <span>Intermédiation des transactions immobilières</span>
-                        </li>
-                    </ul>
-                </article>
-                
-                <article class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition h-full">
+                    <h3 class="text-xl font-bold mb-3" itemprop="name">Département de commerce</h3>
+                    <div class="text-gray-600" itemprop="description">
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Vente des matériaux de construction</li>
+                            <li>Vente des matériels de construction</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition" itemscope itemtype="https://schema.org/Service">
                     <div class="text-blue-900 text-4xl mb-4">
                         <i class="fas fa-drafting-compass" aria-hidden="true"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Département Administration et Finance</h3>
-                    <ul class="text-gray-600 space-y-2">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-orange-500 mt-1 mr-2" aria-hidden="true"></i>
-                            <span>Direction de Finance</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-orange-500 mt-1 mr-2" aria-hidden="true"></i>
-                            <span>Direction des Ressources Humaines</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-orange-500 mt-1 mr-2" aria-hidden="true"></i>
-                            <span>Informatique: community manager</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-orange-500 mt-1 mr-2" aria-hidden="true"></i>
-                            <span>Direction juridique</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-orange-500 mt-1 mr-2" aria-hidden="true"></i>
-                            <span>Sécurité des bâtiments (vidéo surveillance, détecteur de mouvement, contrôle d'accès, pointeur de présence, interphonie)</span>
-                        </li>
-                    </ul>
-                </article>
+                    <h3 class="text-xl font-bold mb-3" itemprop="name">Département de l'administration et finance</h3>
+                    <div class="text-gray-600" itemprop="description">
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Direction de Finance</li>
+                            <li>Direction des Ressources Humaines</li>
+                            <li> Transaction immobilière</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Section Réalisations -->
-    <section id="realisations" class="py-16 bg-white" aria-label="Nos réalisations">
+    <section id="realisations" class="py-16" aria-label="Nos réalisations">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <span class="text-orange-500 font-semibold">Nos projets récents</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mt-2">Nos Réalisations</h2>
-                <div class="w-20 h-1 bg-orange-500 mx-auto mt-4"></div>
-            </div>
-            
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Nos Réalisations</h2>
+
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Projet 1 -->
-                <article class="project-card bg-white rounded-lg overflow-hidden shadow-md h-full">
-                    <img src="realisation1.jpg" alt="Construction d'un bâtiment R+2 à Kinshasa" class="w-full h-48 md:h-56 object-cover" width="400" height="300" loading="lazy">
+                <article class="project-card bg-white rounded-lg overflow-hidden shadow-md" itemscope itemtype="https://schema.org/CreativeWork">
+                    <img src="realisation1.jpg" alt="Projet CONSTRUCTION batiment R2" class="w-full h-48 object-cover" itemprop="image">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Construction bâtiment R+2</h3>
-                        <p class="text-gray-600 mb-4">Complexe résidentiel de luxe réalisé dans le respect des normes antisismiques.</p>
-                        <a href="#" class="text-orange-500 font-semibold hover:text-orange-700 transition flex items-center focus:outline-none focus:ring-2 focus:ring-orange-300 rounded">
+                        <h3 class="text-xl font-bold mb-2" itemprop="name">Construction bâtiment R+2</h3>
+                        <p class="text-gray-600 mb-4" itemprop="description">Complexe résidentiel de luxe.</p>
+                        <a href="#" class="text-orange-500 font-semibold hover:text-orange-700 transition flex items-center" aria-label="En savoir plus sur le projet Construction bâtiment R+2">
                             Voir plus <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
                         </a>
                     </div>
                 </article>
-                
+
                 <!-- Projet 2 -->
-                <article class="project-card bg-white rounded-lg overflow-hidden shadow-md h-full">
-                    <img src="R3.jpg" alt="Construction moderne avec matériaux durables" class="w-full h-48 md:h-56 object-cover" width="400" height="300" loading="lazy">
+                <article class="project-card bg-white rounded-lg overflow-hidden shadow-md" itemscope itemtype="https://schema.org/CreativeWork">
+                    <img src="R3.jpg" alt="Projet commercial" class="w-full h-48 object-cover" itemprop="image">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Construction Moderne</h3>
-                        <p class="text-gray-600 mb-4">Bâtissons l'avenir ensemble avec des constructions modernes, durables et sur mesure.</p>
-                        <a href="#" class="text-orange-500 font-semibold hover:text-orange-700 transition flex items-center focus:outline-none focus:ring-2 focus:ring-orange-300 rounded">
+                        <h3 class="text-xl font-bold mb-2" itemprop="name">Construction Moderne</h3>
+                        <p class="text-gray-600 mb-4" itemprop="description">Bâtissons l'avenir ensemble avec des constructions modernes, durables et sur mesure</p>
+                        <a href="#" class="text-orange-500 font-semibold hover:text-orange-700 transition flex items-center" aria-label="En savoir plus sur le projet Construction Moderne">
                             Voir plus <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
                         </a>
                     </div>
                 </article>
-                
+
                 <!-- Projet 3 -->
-                <article class="project-card bg-white rounded-lg overflow-hidden shadow-md h-full">
-                    <img src="R2.jpg" alt="Suivi de chantier avec matériaux robustes" class="w-full h-48 md:h-56 object-cover" width="400" height="300" loading="lazy">
+                <article class="project-card bg-white rounded-lg overflow-hidden shadow-md" itemscope itemtype="https://schema.org/CreativeWork">
+                    <img src="R2.jpg" alt="Projet institutionnel" class="w-full h-48 object-cover" itemprop="image">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Construction suivie de bâtiments</h3>
-                        <p class="text-gray-600 mb-4">Des matériaux robustes, un béton parfaitement coulé, pour des constructions qui durent.</p>
-                        <a href="#" class="text-orange-500 font-semibold hover:text-orange-700 transition flex items-center focus:outline-none focus:ring-2 focus:ring-orange-300 rounded">
+                        <h3 class="text-xl font-bold mb-2" itemprop="name">Construction suivie des bâtiments</h3>
+                        <p class="text-gray-500 mb-4" itemprop="description">Des matériaux robustes, un béton parfaitement coulé, pour des constructions qui durent.</p>
+                        <a href="#" class="text-orange-500 font-semibold hover:text-orange-700 transition flex items-center" aria-label="En savoir plus sur le projet Construction suivie des bâtiments">
                             Voir plus <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
                         </a>
                     </div>
                 </article>
             </div>
-            
+
             <div class="text-center mt-12">
-                <a href="realisations.html" class="inline-block bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-full transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2">
+                <a href="realisations.html" class="inline-block bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-full transition duration-300" aria-label="Voir toutes nos réalisations">
                     Voir toutes nos réalisations
                 </a>
             </div>
@@ -355,83 +282,68 @@
     <!-- Section Équipe -->
     <section id="equipe" class="py-16 bg-gray-50" aria-label="Notre équipe">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <span class="text-orange-500 font-semibold">Professionnels qualifiés</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mt-2">Notre Équipe</h2>
-                <div class="w-20 h-1 bg-orange-500 mx-auto mt-4"></div>
-                <p class="max-w-2xl mx-auto mt-4 text-gray-600">Une équipe d'experts dévoués à l'excellence dans chaque projet de construction.</p>
-            </div>
-            
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Notre Équipe</h2>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 <!-- Membre 1 -->
-                <article class="team-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300 h-full">
+                <div class="team-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300" itemscope itemtype="https://schema.org/Person">
                     <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-orange-200">
-                        <img src="DG.jpg" alt="Portrait de Lucien TULINABO, Directeur Gérant" class="w-full h-full object-cover" width="128" height="128" loading="lazy">
+                        <img src="DG.jpg" alt="LUCIEN TULINABO" class="w-full h-full object-cover" itemprop="image">
                     </div>
-                    <h3 class="text-xl font-bold mb-1">Lucien TULINABO</h3>
-                    <p class="text-orange-500 font-semibold mb-3">Directeur Gérant</p>
-                    <p class="text-gray-600 text-sm">Gérant de Congo Building Service CBS avec plus de 10 ans d'expérience dans le secteur.</p>
-                </article>
-                
+                    <h3 class="text-xl font-bold mb-1" itemprop="name">Lucien TULINABO</h3>
+                    <p class="text-orange-500 font-semibold mb-3" itemprop="jobTitle">Directeur Gérant No1</p>
+                    <p class="text-gray-600 text-sm" itemprop="description">Gérant de Congo Building Service CBS.</p>
+                </div>
+
                 <!-- Membre 2 -->
-                <article class="team-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300 h-full">
+                <div class="team-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300" itemscope itemtype="https://schema.org/Person">
                     <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-orange-200">
-                        <img src="Directeur BTP .jpg" alt="Portrait de Germain BAYONGWA, Ingénieur BTP" class="w-full h-full object-cover" width="128" height="128" loading="lazy">
+                        <img src="Directeur BTP .jpg" alt="Germain BAYONGWA" class="w-full h-full object-cover" itemprop="image">
                     </div>
-                    <h3 class="text-xl font-bold mb-1">Germain BAYONGWA</h3>
-                    <p class="text-orange-500 font-semibold mb-3">Ingénieur BTP</p>
-                    <p class="text-gray-600 text-sm">Ingénieur A0 BTP-HYDRAULIQUE spécialisé dans les infrastructures complexes.</p>
-                </article>
-                
+                    <h3 class="text-xl font-bold mb-1" itemprop="name">Germain BAYONGWA</h3>
+                    <p class="text-orange-500 font-semibold mb-3" itemprop="jobTitle">Directeur technique</p>
+                    <p class="text-gray-600 text-sm" itemprop="description">Directeur BTP </p>
+                </div>
+
                 <!-- Membre 3 -->
-                <article class="team-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300 h-full">
+                <div class="team-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300" itemscope itemtype="https://schema.org/Person">
                     <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-orange-200">
-                        <img src="vice-directeur BTP .jpg" alt="Portrait de Joseph LUBERA, Vice directeur BTP" class="w-full h-full object-cover" width="128" height="128" loading="lazy">
+                        <img src="vice-directeur BTP .jpg" alt="Joseph LUBERA" class="w-full h-full object-cover" itemprop="image">
                     </div>
-                    <h3 class="text-xl font-bold mb-1">Ir. Joseph LUBERA</h3>
-                    <p class="text-orange-500 font-semibold mb-3">Vice directeur BTP</p>
-                    <p class="text-gray-600 text-sm">Supervise tous nos projets dans la capitale avec rigueur et expertise technique.</p>
-                </article>
-                
+                    <h3 class="text-xl font-bold mb-1" itemprop="name">Ir. Joseph LUBERA</h3>
+                    <p class="text-orange-500 font-semibold mb-3" itemprop="jobTitle">Vice directeur BTP</p>
+                    <p class="text-gray-600 text-sm" itemprop="description">Supervise tous nos projets dans la capitale avec rigueur.</p>
+                </div>
+
                 <!-- Membre 4 -->
-                <article class="team-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300 h-full">
+                <div class="team-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300" itemscope itemtype="https://schema.org/Person">
                     <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-orange-200">
-                        <img src="Directeur Commercial.jpg" alt="Portrait de Michel TSHILUMBA, Directeur Commercial" class="w-full h-full object-cover" width="128" height="128" loading="lazy">
+                        <img src="Directeur Commercial.jpg" alt="Michel tshilumba" class="w-full h-full object-cover" itemprop="image">
                     </div>
-                    <h3 class="text-xl font-bold mb-1">Ir. Michel TSHILUMBA</h3>
-                    <p class="text-orange-500 font-semibold mb-3">Directeur Commercial</p>
-                    <p class="text-gray-600 text-sm">Expert en construction et marketing avec une approche client centrée.</p>
-                </article>
-                
+                    <h3 class="text-xl font-bold mb-1" itemprop="name">Ir. Michel TSHILUMBA</h3>
+                    <p class="text-orange-500 font-semibold mb-3" itemprop="jobTitle">Directeur Commercial</p>
+                    <p class="text-gray-600 text-sm" itemprop="description">Expert en construction et Marketing.</p>
+                </div>
+
                 <!-- Membre 5 -->
-                <article class="team-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300 h-full">
+                <div class="team-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300" itemscope itemtype="https://schema.org/Person">
                     <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-orange-200">
-                        <img src="Vice-Directeur Commercial.jpg" alt="Portrait de Urbain LUDUNGE, Vice directeur Commercial" class="w-full h-full object-cover" width="128" height="128" loading="lazy">
+                        <img src="Vice-Directeur Commercial.jpg" alt="Urbain LUDUNGE" class="w-full h-full object-cover" itemprop="image">
                     </div>
-                    <h3 class="text-xl font-bold mb-1">Urbain LUDUNGE</h3>
-                    <p class="text-orange-500 font-semibold mb-3">Vice directeur Commercial</p>
-                    <p class="text-gray-600 text-sm">Gère les budgets et optimise les coûts de nos projets avec précision.</p>
-                </article>
-                
+                    <h3 class="text-xl font-bold mb-1" itemprop="name">Urbain LUDUNGE</h3>
+                    <p class="text-orange-500 font-semibold mb-3" itemprop="jobTitle">Vice directeur Commercial</p>
+                    <p class="text-gray-600 text-sm" itemprop="description">Gère les budgets et optimise les coûts de nos projets.</p>
+                </div>
+
                 <!-- Membre 6 -->
-                <article class="team-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300 h-full">
+                <div class="team-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300" itemscope itemtype="https://schema.org/Person">
                     <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-orange-200">
-                        <img src="Directeur Administratif et Financier.jpg" alt="Portrait de Innoncent BALOLA, Directeur Administratif et Financier" class="w-full h-full object-cover" width="128" height="128" loading="lazy">
+                        <img src="Directeur Administratif et Financier.jpg" alt="Innoncent BALOLA" class="w-full h-full object-cover" itemprop="image">
                     </div>
-                    <h3 class="text-xl font-bold mb-1">Innoncent BALOLA</h3>
-                    <p class="text-orange-500 font-semibold mb-3">Directeur Administratif et Financier</p>
-                    <p class="text-gray-600 text-sm">Garant de la santé financière et administrative de l'organisation.</p>
-                </article>
-                
-                <!-- Membre 7 -->
-                <article class="team-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300 h-full">
-                    <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-orange-200">
-                        <img src="CB.jpg" alt="Portrait de Jean-Pierre BAYONGWA, Directeur technique" class="w-full h-full object-cover" width="128" height="128" loading="lazy">
-                    </div>
-                    <h3 class="text-xl font-bold mb-1">Jean-Pierre BAYONGWA</h3>
-                    <p class="text-orange-500 font-semibold mb-3">Directeur technique</p>
-                    <p class="text-gray-600 text-sm">Expert en faisabilité et qualité des projets de construction.</p>
-                </article>
+                    <h3 class="text-xl font-bold mb-1" itemprop="name">Innoncent BALOLA</h3>
+                    <p class="text-orange-500 font-semibold mb-3" itemprop="jobTitle">Directeur Administratif et Financier</p>
+                    <p class="text-gray-600 text-sm" itemprop="description">Garanti la bonne santé financière, administrative et stratégique de l'organisation de part son expérience.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -439,59 +351,53 @@
     <!-- Section Contact et Devis -->
     <section id="contact" class="py-16 gradient-bg text-white" aria-label="Contactez-nous">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <span class="text-orange-200 font-semibold">Nous sommes à votre écoute</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-2">Demandez un devis</h2>
-                <div class="w-20 h-1 bg-orange-300 mx-auto mt-4"></div>
-                <p class="max-w-2xl mx-auto mt-4 text-white text-opacity-90">Remplissez ce formulaire et nous vous contacterons dans les plus brefs délais pour discuter de votre projet.</p>
-            </div>
-            
-            <div class="max-w-4xl mx-auto bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-lg">
-                <form id="devisForm" class="grid md:grid-cols-2 gap-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Demandez un devis</h2>
+
+            <div class="max-w-4xl mx-auto bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-8 shadow-lg">
+                <form id="devisForm" class="grid md:grid-cols-2 gap-6" itemscope itemtype="https://schema.org/ContactPage">
                     <div>
-                        <label for="nom" class="block mb-2 font-medium">Nom complet <span class="text-orange-300">*</span></label>
-                        <input type="text" id="nom" required class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-orange-300 placeholder-white placeholder-opacity-70">
+                        <label for="nom" class="block mb-2 font-medium">Nom complet</label>
+                        <input type="text" id="nom" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-orange-300" required itemprop="name">
                     </div>
-                    
+
                     <div>
-                        <label for="email" class="block mb-2 font-medium">Email <span class="text-orange-300">*</span></label>
-                        <input type="email" id="email" required class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-orange-300 placeholder-white placeholder-opacity-70">
+                        <label for="email" class="block mb-2 font-medium">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-orange-300" required itemprop="email">
                     </div>
-                    
+
                     <div>
-                        <label for="telephone" class="block mb-2 font-medium">Téléphone <span class="text-orange-300">*</span></label>
-                        <input type="tel" id="telephone" required class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-orange-300 placeholder-white placeholder-opacity-70">
+                        <label for="telephone" class="block mb-2 font-medium">Téléphone</label>
+                        <input type="tel" id="telephone" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-orange-300" required itemprop="telephone">
                     </div>
-                    
+
                     <div>
-                        <label for="ville" class="block mb-2 font-medium">Ville <span class="text-orange-300">*</span></label>
-                        <select id="ville" required class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-orange-300">
+                        <label for="ville" class="block mb-2 font-medium">Ville</label>
+                        <select id="ville" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-orange-300" required>
                             <option value="">Sélectionnez...</option>
                             <option value="kinshasa">Kinshasa</option>
                             <option value="goma">Goma</option>
                             <option value="autre">Autre</option>
                         </select>
                     </div>
-                    
+
                     <div class="md:col-span-2">
-                        <label for="service" class="block mb-2 font-medium">Type de service <span class="text-orange-300">*</span></label>
-                        <select id="service" required class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-orange-300">
+                        <label for="service" class="block mb-2 font-medium">Type de service</label>
+                        <select id="service" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-orange-300" required>
                             <option value="">Sélectionnez...</option>
                             <option value="construction">Construction neuve</option>
                             <option value="renovation">Rénovation</option>
                             <option value="design">Conception architecturale</option>
-                            <option value="materiaux">Achat de matériaux</option>
                             <option value="autre">Autres</option>
                         </select>
                     </div>
-                    
+
                     <div class="md:col-span-2">
-                        <label for="message" class="block mb-2 font-medium">Détails de votre projet <span class="text-orange-300">*</span></label>
-                        <textarea id="message" rows="4" required class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-orange-300 placeholder-white placeholder-opacity-70"></textarea>
+                        <label for="message" class="block mb-2 font-medium">Détails de votre projet</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-orange-300" required itemprop="description"></textarea>
                     </div>
-                    
+
                     <div class="md:col-span-2 flex justify-center">
-                        <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-12 rounded-full transition duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-900">
+                        <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-12 rounded-full transition duration-300">
                             Envoyer la demande
                         </button>
                     </div>
@@ -500,163 +406,112 @@
         </div>
     </section>
 
-    <!-- Section Clients / Partenaires -->
-    <section class="py-12 bg-white" aria-label="Nos partenaires">
-        <div class="container mx-auto px-4">
-            <h2 class="text-2xl font-bold text-center mb-8 text-blue-900">Ils nous font confiance</h2>
-            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-                <img src="partner1.png" alt="Logo partenaire 1" class="h-12 md:h-16 object-contain opacity-70 hover:opacity-100 transition" loading="lazy">
-                <img src="partner2.png" alt="Logo partenaire 2" class="h-12 md:h-16 object-contain opacity-70 hover:opacity-100 transition" loading="lazy">
-                <img src="partner3.png" alt="Logo partenaire 3" class="h-12 md:h-16 object-contain opacity-70 hover:opacity-100 transition" loading="lazy">
-                <img src="partner4.png" alt="Logo partenaire 4" class="h-12 md:h-16 object-contain opacity-70 hover:opacity-100 transition" loading="lazy">
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="bg-blue-900 text-white py-12" aria-label="Pied de page">
+    <footer class="bg-blue-900 text-white py-12" itemscope itemtype="https://schema.org/LocalBusiness">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Congo Building Services</h3>
-                    <p class="mb-4">Leader en construction et rénovation en République Démocratique du Congo depuis 2020.</p>
+                    <h3 class="text-xl font-bold mb-4" itemprop="name">Congo Building Services</h3>
+                    <p class="mb-4" itemprop="description">Leader en construction et rénovation en République Démocratique du Congo.</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="hover:text-orange-300 transition focus:outline-none focus:ring-2 focus:ring-orange-300 rounded-full p-2" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="hover:text-orange-300 transition focus:outline-none focus:ring-2 focus:ring-orange-300 rounded-full p-2" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="hover:text-orange-300 transition focus:outline-none focus:ring-2 focus:ring-orange-300 rounded-full p-2" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="hover:text-orange-300 transition focus:outline-none focus:ring-2 focus:ring-orange-300 rounded-full p-2" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
+                        <a href="#" class="hover:text-orange-300 transition" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-orange-300 transition" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-orange-300 transition" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="hover:text-orange-300 transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                
+
                 <div>
                     <h3 class="text-xl font-bold mb-4">Nos agences</h3>
-                    <div class="space-y-2">
-                        <p class="flex items-start">
-                            <i class="fas fa-map-marker-alt mr-2 text-orange-300 mt-1" aria-hidden="true"></i>
-                            <span>N°1, av/ Abedi, c/ Ngaliema, Q/Kinsuka pécheur, ville de Kinshasa</span>
-                        </p>
-                        <p class="flex items-start">
-                            <i class="fas fa-map-marker-alt mr-2 text-orange-300 mt-1" aria-hidden="true"></i>
-                            <span>Goma: Commune de GOMA, Q.KATINDO, Av. de LA FRONTIERE No 99</span>
-                        </p>
-                        <p class="flex items-start">
-                            <i class="fas fa-phone-alt mr-2 text-orange-300 mt-1" aria-hidden="true"></i>
-                            <span>+243 977739825 (WhatsApp), 0810109280</span>
-                        </p>
-                        <p class="flex items-start">
-                            <i class="fas fa-envelope mr-2 text-orange-300 mt-1" aria-hidden="true"></i>
-                            <span>congobuildingservice@gmail.com</span>
-                        </p>
+                    <div class="space-y-2" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                        <p><i class="fas fa-map-marker-alt mr-2 text-orange-300"></i> <span itemprop="streetAddress">N°1, av/ Abedi, c/ Ngaliema, Q/Kinsuka pécheur</span>, <span itemprop="addressLocality">ville de Kinshasa</span></p>
+                        <p><i class="fas fa-map-marker-alt mr-2 text-orange-300"></i> <span itemprop="streetAddress">Goma: Commune de GOMA, Q.KATINDO, Av. de LA FRONTIERE No 99</span></p>
+                        <p><i class="fas fa-phone-alt mr-2 text-orange-300"></i> <span itemprop="telephone">+243 977739825 (whatsApp), 0810109280</span></p>
+                        <p><i class="fas fa-envelope mr-2 text-orange-300"></i> <span itemprop="email">congobuildingservice@gmail.com</span></p>
                     </div>
                 </div>
-                
+
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Newsletter</h3>
-                    <p class="mb-4">Abonnez-vous pour recevoir nos actualités et offres spéciales.</p>
-                    <form class="flex">
-                        <input type="email" placeholder="Votre email" class="px-4 py-2 rounded-l-lg text-gray-800 w-full focus:outline-none focus:ring-2 focus:ring-orange-300">
-                        <button type="submit" class="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-r-lg focus:outline-none focus:ring-2 focus:ring-orange-300">
-                            <i class="fas fa-paper-plane"></i>
-                            <span class="sr-only">S'abonner</span>
-                        </button>
-                    </form>
+                    <h3 class="text-xl font-bold mb-4">Horaires d'ouverture</h3>
+                    <div class="space-y-2" itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+                        <p><meta itemprop="dayOfWeek" content="Monday Friday">Lundi - Vendredi: <span itemprop="opens">8h00</span> - <span itemprop="closes">17h00</span></p>
+                        <p><meta itemprop="dayOfWeek" content="Saturday">Samedi: <span itemprop="opens">9h00</span> - <span itemprop="closes">13h00</span></p>
+                        <p>Dimanche: Fermé</p>
+                    </div>
                 </div>
             </div>
-            
-            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm">
-                <p>&copy; 2025 Congo Building Services. Tous droits réservés. | <a href="#" class="hover:text-orange-300 underline">Mentions légales</a> | <a href="#" class="hover:text-orange-300 underline">Politique de confidentialité</a></p>
-                <p class="mt-2 text-white text-opacity-70">Site conçu avec <i class="fas fa-heart text-orange-300" aria-hidden="true"></i> par Congo Building Services</p>
+
+            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center">
+                <p>&copy; <span itemprop="copyrightYear">2025</span> Congo Building Services. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Bouton retour en haut -->
-    <button id="backToTop" class="fixed bottom-6 right-6 bg-orange-500 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white" aria-label="Retour en haut">
-        <i class="fas fa-arrow-up"></i>
-    </button>
 
     <script>
         // Fonction pour changer l'image d'accueil
         const heroImages = [
             'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
             'nos installations.jpg',
-            'chantier2.jpg'
+            'chantier2.jpg',
         ];
-        
+
         let currentHeroIndex = 0;
         const heroSection = document.querySelector('.hero-image');
         const changeHeroBtn = document.getElementById('changeHeroBtn');
-        
-        if (changeHeroBtn) {
-            changeHeroBtn.addEventListener('click', () => {
-                currentHeroIndex = (currentHeroIndex + 1) % heroImages.length;
-                heroSection.style.backgroundImage = `url('${heroImages[currentHeroIndex]}')`;
+
+        changeHeroBtn.addEventListener('click', () => {
+            currentHeroIndex = (currentHeroIndex + 1) % heroImages.length;
+            heroSection.style.backgroundImage = `url('${heroImages[currentHeroIndex]}')`;
+        });
+
+        // Menu mobile
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Fermer le menu mobile quand on clique sur un lien
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
             });
-        }
-        
+        });
+
         // Envoi du formulaire par email
         const devisForm = document.getElementById('devisForm');
-        
-        if (devisForm) {
-            devisForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                
-                // Récupération des valeurs du formulaire
-                const nom = document.getElementById('nom').value;
-                const email = document.getElementById('email').value;
-                const telephone = document.getElementById('telephone').value;
-                const ville = document.getElementById('ville').value;
-                const service = document.getElementById('service').value;
-                const message = document.getElementById('message').value;
-                
-                // Construction du lien mailto
-                const subject = `Demande de devis - ${nom}`;
-                const body = `Nom: ${nom}%0D%0AEmail: ${email}%0D%0ATéléphone: ${telephone}%0D%0AVille: ${ville}%0D%0AService: ${service}%0D%0A%0D%0AMessage:%0D%0A${message}`;
-                
-                const mailtoLink = `mailto:congobuildingservice@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-                
-                // Ouverture du client mail par défaut
-                window.location.href = mailtoLink;
-                
-                // Réinitialisation du formulaire
-                devisForm.reset();
-                
-                // Message de confirmation
-                alert('Votre demande de devis a été envoyée avec succès! Nous vous contacterons rapidement.');
-            });
-        }
-        
-        // Bouton retour en haut
-        const backToTopButton = document.getElementById('backToTop');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.remove('opacity-0', 'invisible');
-                backToTopButton.classList.add('opacity-100', 'visible');
-            } else {
-                backToTopButton.classList.remove('opacity-100', 'visible');
-                backToTopButton.classList.add('opacity-0', 'invisible');
-            }
+
+        devisForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Récupération des valeurs du formulaire
+            const nom = document.getElementById('nom').value;
+            const email = document.getElementById('email').value;
+            const telephone = document.getElementById('telephone').value;
+            const ville = document.getElementById('ville').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+
+            // Construction du lien mailto
+            const subject = `Demande de devis - ${nom}`;
+            const body = `Nom: ${nom}%0D%0AEmail: ${email}%0D%0ATéléphone: ${telephone}%0D%0AVille: ${ville}%0D%0AService: ${service}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+
+            const mailtoLink = `mailto:congobuildingservice@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            // Ouverture du client mail par défaut
+            window.location.href = mailtoLink;
+
+            // Réinitialisation du formulaire
+            devisForm.reset();
+
+            // Message de confirmation
+            alert('Votre demande de devis a été envoyée avec succès! Nous vous contacterons rapidement.');
         });
-        
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Chargement différé des images non critiques
+
+        // Lazy loading pour les images
         document.addEventListener('DOMContentLoaded', function() {
-            const lazyImages = [].slice.call(document.querySelectorAll('img[loading="lazy"]'));
+            const lazyImages = [].slice.call(document.querySelectorAll('img[data-src]'));
             
             if ('IntersectionObserver' in window) {
                 let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
@@ -668,7 +523,7 @@
                         }
                     });
                 });
-                
+
                 lazyImages.forEach(function(lazyImage) {
                     lazyImageObserver.observe(lazyImage);
                 });
